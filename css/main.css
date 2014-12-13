@@ -1,0 +1,112 @@
+/* CSS Document */
+
+
+#scrollinfo {
+	position: fixed;
+	top: 32px;
+	left: 32px;
+}
+
+
+@font-face {
+	font-family: "Tribal";
+	src: url("../font/troika.eot?") format("eot");
+	src: local("Tribal Regular"), local("Tribal"), url("../font/troika.otf?") format("opentype");
+}
+html {
+	-webkit-font-smoothing: antialiased;
+}
+body {
+	background: #008080 fixed url("../img/tile/swirl.png");
+	overflow-x: hidden;
+}
+body, html, #skrollr-body {
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+h1, h2, h3, h4, h5, p, a {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-family: "Tribal";
+	font-size: 96px;
+}
+h2 {
+	font-family: "Tribal";
+	font-size: 72px;
+}
+h3 {
+	font-family: "Tribal";
+	font-size: 64px;
+}
+h4 {
+	font-family: "Tribal";
+	font-size: 48px;
+}
+h5 {
+	font-family: "Tribal";
+	font-size: 32px;
+}
+#skrollr-body { /* wrapper for slides only */
+	width: 100%;
+	height: auto;
+	padding: 0;
+}
+#skrollr-body section {
+	width: auto;
+	height: 2000px;
+	margin-left: 0;
+	display: block;
+}
+#startscrolling {
+	position: fixed;
+	bottom: 132px;
+	text-align: center;
+	width: 100%;
+}
+#scrollarrow {
+	width: 80px;
+	position: fixed;
+	bottom: 32px;
+	left: 50%;
+	margin-left: -40px;
+}
+#intro #hi {
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	top:0%;
+}
+.hover {
+	-webkit-animation: hover 1.5s infinite;
+	-moz-animation: hover 1.5s infinite;
+	-o-animation: hover 1.5s infinite;
+	animation: hover 1.5s infinite;
+	-webkit-animation-timing-function: ease-in-out;
+	-moz-animation-timing-function: ease-in-out;
+	-o-animation-timing-function: ease-in-out;
+	animation-timing-function: ease-in-out;
+}
+@-webkit-keyframes hover {
+	0% {transform: translateY(0%);}
+	50% {transform: translateY(20%);}
+	100% {transform: translateY(0%);}
+}
+@-moz-keyframes hover {
+	0% {transform: translateY(0%);}
+	50% {transform: translateY(20%);}
+	100% {transform: translateY(0%);}
+}
+@-o-keyframes hover {
+	0% {transform: translateY(0%);}
+	50% {transform: translateY(20%);}
+	100% {transform: translateY(0%);}
+}
+@keyframes hover {
+	0% {transform: translateY(0%);}
+	50% {transform: translateY(20%);}
+	100% {transform: translateY(0%);}
+}
